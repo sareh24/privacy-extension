@@ -3,7 +3,7 @@
   "name": "Privacy Extension",
   "version": "0.1",
   "description": "Real-time tracker and consent monitoring extension.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "webRequest"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
