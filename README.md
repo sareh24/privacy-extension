@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
 
     A[Phase 1: Foundations] --> B[Phase 2: Project Setup]
