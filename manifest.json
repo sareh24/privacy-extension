@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Privacy Extension",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Real-time tracker and consent monitoring extension.",
   "permissions": ["storage", "webRequest"],
   "host_permissions": ["<all_urls>"],
@@ -14,7 +14,12 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content/content.js"],
+      "run_at": "document_start"
     }
-  ]
+  ],
+  "actions": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Privacy Monitor"
+  }
 }
